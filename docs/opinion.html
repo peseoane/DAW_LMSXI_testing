@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Propuesta TAA24">
+    <meta name="author" content="a22pedrovsp">
+    <title>TAA24 · Iniciación HTML</title>
+    <!--
+        <base href="https://taa24.lmsxs.pedroseoaneprado.es/" target="_blank">
+    //-->
+
+    <!--
+    <style></style>
+    <meta name="keywords" content="obsolete">
+    //-->
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="director.html#director">Director</a>
+        <a href="personajes.html">Personajes</a>
+        <a href="streaming.html">Plataformas de streaming</a>
+        <a href="media.html">Media</a>
+        <a class="active" href="opinion.html">Opinión</a>
+    </div>
+
+    <section>
+        <h1 id="opinion">Opinión</h1>
+        <form>
+            <h2 id="opinion.encuesta">Encuesta</h2>
+            <div>
+                <h3>Identificación</h3>
+                Por favor, introduce tu usuario del videoclub.
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Escriba su correo asociado">
+            </div>
+            <div>
+                <h3>¿Qué has visto?</h3>
+                <p>La película tiene 4 episodios y luego dos complementarios con entrevistas con los personajes
+                    "reales", marca las opciones que correspondan.</p>
+
+                <label for="film.base">He visto la miniserie.</label><br>
+                <input type="checkbox" id="film.base" value="base" name="plattform"><br>
+
+                <label for="film.extended">He visto los extras y entrevistas.</label><br>
+                <input type="checkbox" id="film.extended" value="extended" name="plattform"><br>
+
+            </div>
+            <div>
+                <h3>¿Dónde la has visto?</h3>
+                <p>En caso de haberla visto de varias maneras, selecciona la más premium / legal.</p>
+
+                <label for="plattform.netflix">Netflix</label><br>
+                <input type="radio" id="plattform.netflix" value="Netflix" name="plattform"><br>
+
+                <label for="plattform.tv">Televisión</label><br>
+                <input type="radio" id="plattform.tv" value="TV" name="plattform"><br>
+
+                <label for="plattform.pirata">Pirateado</label><br>
+                <input type="radio" id="plattform.pirata" value="Pirata" name="plattform"><br>
+
+            </div>
+            <div>
+                <h3>¿Qué mejorarías de la película?</h3>
+                <p>Describe brevemente qué cambiarías, es muy oscura, muy corta...</p>
+
+                <label for="feedback.short-text">¿Qué mejorarías?</label><br>
+                <input type="text" id="feedback.short-text" name="feedback"><br>
+
+            </div>
+            <div>
+                <h3>¿Has aprendido algo viendo la película?</h3>
+                <p>De ser así, por favor, detalla qué has descubierto.</p>
+                <label for="learned.long-text">Detalle:</label>
+                <textarea id="learned.long-text" name="learned" rows="4" cols="50">No sabía que SIG era tan caro!
+                </textarea>
+            </div>
+            <div>
+                <label for="choose">¿Quien tenía razón?</label>
+                <select id="choose" name="choose">
+                    <option value="artcom">Art&Com</option>
+                    <option value="google">Google/SIG</option>
+                    <option value="all">Las dos partes</option>
+                    <option value="none">Ninguno.</option>
+                    <option value="nscs">NS/NC</option>
+                </select>
+            </div>
+            <div>
+                <h3>Valora la película</h3>
+                <input type="range" id="rating" name="rating" min="0" max="5" value="4">
+                <label for="rating">Valoración</label>
+
+            </div>
+            <div>
+                <input type="reset" value="Borrar">
+            </div>
+            <div>
+                <input type="submit" value="Enviar encuesta">
+
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="navbar">
+            <a href="media.html#media">Media</a>
+        </div>
+    </footer>
+</body>
+
+</html>
