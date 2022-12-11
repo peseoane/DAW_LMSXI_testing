@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Propuesta TAA24">
-    <meta name="author" content="a22pedrovsp">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Propuesta TAA24" name="description">
+    <meta content="a22pedrovsp" name="author">
+    <link href="devel-peliculas.css" rel="stylesheet">
     <title>TAA24 · Iniciación HTML</title>
     <!--
         <base href="https://taa24.lmsxs.pedroseoaneprado.es/" target="_blank">
@@ -19,63 +20,70 @@
 </head>
 
 <body>
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="director.html#director">Director</a>
-        <a href="personajes.html">Personajes</a>
-        <a class="active" href="streaming.html">Plataformas de streaming</a>
-        <a href="media.html">Media</a>
-        <a href="opinion.html">Opinión</a>
-    </div>
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="director.html#director">Director</a>
+    <a href="personajes.html">Personajes</a>
+    <a class="active" href="streaming.html">Plataformas de streaming</a>
+    <a href="media.html">Media</a>
+    <a href="opinion.html">Opinión</a>
+</div>
 
-    <section>
+<section>
+    <div class="titulo">
         <h1 id="media">Media</h1>
-        <article>
-            <h2 id="media.trailer">Trailer</h2>
-            <video controls width="auto">
-                <source src="assets/trailer.webm" type="video/webm">
-                Tu navegador no soporta webm/VP9.
-            </video>
-        </article>
-        <article>
-            <h2 id="media.fotos">Fotos</h2>
-            <figure>
-                <img src="assets/screenshot-1.webp" width="auto" alt="Oficinas de Art.com">
-                <figcaption>Oficinas de Art.com, mientras se desarrolla TierraVision</figcaption>
-            </figure>
-            <figure>
-                <img src="assets/screenshot-2.webp" width="auto" alt="Ordenador SIG">
-                <figcaption>Juri usando el ordenador del banco, un SIG ONYX para mostrarle a su compañero una simulación
-                    del globo terráqueo.</figcaption>
-            </figure>
-            <figure>
-                <img src="assets/screenshot-3.webp" width="auto" alt="Juri y Carsten en Kyoto">
-                <figcaption>Presentando TerraVision en Kyoto (años 90)</figcaption>
-            </figure>
-            <figure>
-                <img src="assets/screenshot-5.webp" width="auto" alt="Juri y Carsten en el juzgado norteamericano contra Google"
-                    >
-                <figcaption>Juri y todo el equipo, en el juzgado norteamericano luchando contra Google por
-                    infringimiento de patente.</figcaption>
-            </figure>
-        </article>
-        <article>
-            <h2 id="media.opinion">Opinión</h2>
-            <p>Subtítulos generados con VORSK (modelo grande), son de IA+ML con Python genera el SRT y luego se vincula al stream en webm, pero los he intentado revisar espero que se entienda... si pudiéramos usar JavaScript podría importarlos como algo externo y no sobre el vídeo (con tracks en el src)</p>
-                <video controls width="auto" width="360">
-                    <source src="assets/opinion.webm" type="video/webm">
-                    Tu navegador no soporta webm/VP9.
-                </video>
-            </h2>
-        </article>
-    </section>
+    </div>
+    <article>
+        <h2 id="media.trailer">Trailer</h2>
+        <video controls poster="assets/poster.webp" width="auto">
+            <source src="assets/trailer.webm" type="video/webm">
+            Tu navegador no soporta webm/VP9.
+        </video>
+    </article>
+    <article>
+        <h2 id="media.fotos">Fotos</h2>
+        <figure>
+            <img alt="Oficinas de Art.com" src="assets/screenshot-1.webp" width="auto">
+            <figcaption>Oficinas de Art.com, mientras se desarrolla TierraVision</figcaption>
+        </figure>
+        <figure>
+            <img alt="Ordenador SIG" src="assets/screenshot-2.webp" width="auto">
+            <figcaption>Juri usando el ordenador del banco, un SIG ONYX para mostrarle a su compañero una simulación
+                del globo terráqueo.
+            </figcaption>
+        </figure>
+        <figure>
+            <img alt="Juri y Carsten en Kyoto" src="assets/screenshot-3.webp" width="auto">
+            <figcaption>Presentando TerraVision en Kyoto (años 90)</figcaption>
+        </figure>
+        <figure>
+            <img alt="Juri y Carsten en el juzgado norteamericano contra Google" src="assets/screenshot-5.webp"
+                 width="auto"
+            >
+            <figcaption>Juri y todo el equipo, en el juzgado norteamericano luchando contra Google por
+                infringimiento de patente.
+            </figcaption>
+        </figure>
+    </article>
+    <article>
+        <h2 id="media.opinion">Opinión</h2>
+        <p>Subtítulos generados con VORSK (modelo grande), son de IA+ML con Python genera el SRT y luego se vincula al
+            stream en webm, pero los he intentado revisar espero que se entienda... si pudiéramos usar JavaScript podría
+            importarlos como algo externo y no sobre el vídeo (con tracks en el src)</p>
+        <video controls width="auto" width="360">
+            <source src="assets/opinion.webm" type="video/webm">
+            Tu navegador no soporta webm/VP9.
+        </video>
+        </h2>
+    </article>
+</section>
 
-    <footer>
-        <div class="navbar">
-            <a href="streaming.html#streaming">Media</a>
-            <a href="opinion.html#opinion">Personajes</a>
-        </div>
-    </footer>
+<footer>
+    <div class="navbar">
+        <a href="streaming.html#streaming">Media</a>
+        <a href="opinion.html#opinion">Personajes</a>
+    </div>
+</footer>
 </body>
 
 </html>
